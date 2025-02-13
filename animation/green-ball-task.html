@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(161, 211, 255);
+        }
+
+        .ball{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgb(6, 80, 10);
+
+            position: relative;
+            animation: complexMove 4s infinite normal ease-in-out;
+        }
+
+        @keyframes complexMove{
+            0%{
+                left: 0px;
+                top: -150px;
+            }
+
+            25%{
+                left: -200px;
+                top: 300px;
+            }
+
+            50%{
+                left: 400px;
+                top: 500px;
+            }
+
+            75%{
+                left: -100px;
+                top: 700px;
+            }
+
+            100%{
+                left: 0px;
+                top: 1000px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class = "ball"></div>
+</body>
+</html>
